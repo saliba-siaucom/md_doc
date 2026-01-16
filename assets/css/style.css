@@ -29,6 +29,25 @@ a:link, a:visited, a:hover a:active {
 img {
     border: none;
 }
+.mt-10 {
+	margin-top: 10vh !important;
+}
+.mt-20 {
+	margin-top: 20vh !important;
+}
+.mt-30 {
+	margin-top: 30vh !important;
+}
+.mt-40 {
+	margin-top: 40vh !important;
+}
+.mt-50 {
+	margin-top: 50vh !important;
+}
+.mt-60 {
+	margin-top: 60vh !important;
+}
+
 header {
     display: flex;
     justify-content: space-between;

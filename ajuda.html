@@ -8,6 +8,7 @@
 		<meta name="description" content="Leitor online de Markdown (.md) com pré-visualização em tempo real." />
 		<link rel="icon" type="image/png" href="./assets/image/favicon.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=1.11.1">
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
@@ -27,16 +28,16 @@
 
 		<!-- Header -->
 		<header class="bg-gradient-to-r from-slate-900 to-indigo-600 text-white">
-			<div class="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between flex-col md:flex-row gap-4">
-				<div class="flex items-center gap-4">
+			<div class="w-full mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+				<div class="flex items-center gap-4 flex-1 min-w-0">
 					<div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-3xl">📘</div>
 					<div>
 						<h1 class="text-3xl font-bold">Guia Visual de Markdown</h1>
 						<p class="text-sm opacity-90">Aprenda a escrever em Markdown com exemplos visuais</p>
 					</div>
 				</div>
-				<nav>
-					<a href="index.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
+				<nav class="flex gap-1 ml-auto">
+					<a href="./" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
 					<a href="sobre.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Sobre</a>
 					<a href="ajuda.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Ajuda</a>
 				</nav>
@@ -358,9 +359,10 @@
 			</section>
 		</main>
 		<!-- Footer --> 
-		<footer class="bg-gradient-to-l from-slate-900 to-indigo-600 text-slate-400 mt-16">
-			<div class="max-w-7xl mx-auto px-6 py-6 text-center">
-				© 2026 • Guia Visual Markdown • SISAPP
+		<footer class="w-full mt-16 bg-gradient-to-l from-slate-900 to-indigo-600 text-slate-400">
+			<div class="flex items-center justify-between mx-auto px-2 py-2 text-center">
+				<div class="text-white">© 2026 • Guia Visual Markdown • <a href="https://siaucom.com.br" target="_blank">Siaucom</a></div>
+				<div class="text-white">Construído para documentação e revisão rápida</div>
 			</div>
 		</footer>
 	</body>

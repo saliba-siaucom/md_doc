@@ -9,6 +9,7 @@
 
 		<link rel="icon" type="image/png" href="./assets/image/favicon.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=1.11.1">
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script>
 			// Configuração simples do Tailwind via CDN: adiciona um tom de azul personalizado
@@ -30,22 +31,22 @@
 
 	<body class="bg-gray-50 text-gray-800 antialiased">
 		<header class="bg-gradient-to-r from-slate-900 to-indigo-600 text-white">
-			<div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-				<div class="flex items-center gap-4">
-					<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-2xl">📄</div>
+			<div class="w-full mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+				<div class="flex items-center gap-4 flex-1 min-w-0">
+					<div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-3xl">📘</div>
 					<div>
 						<h1 class="text-2xl font-semibold">Leitor Markdown</h1>
 						<p class="text-sm opacity-90">Visualize .md e .yml de forma rápida e confiável</p>
 					</div>
 				</div>
-				<nav>
-					<a href="index.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
+				<nav class="flex gap-1 ml-auto">
+					<a href="./" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
 					<a href="sobre.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Sobre</a>
 					<a href="ajuda.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Ajuda</a>
 				</nav>
 			</div>
 		</header>
-
+		
 		<main class="max-w-6xl mx-auto px-6 py-12">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<section class="md:col-span-2 bg-white rounded-2xl shadow p-8">
@@ -98,11 +99,9 @@
 			</div>
 		</main>
 
-		<div class="py-10 mt-10 border-t border-gray-200 "></div>
-		<footer class="w-full bg-gradient-to-l from-slate-900 to-indigo-600 text-slate-400 mx-auto px-6 py-2 text-sm text-white">
-			<div class="mx-auto px-6 py-6 text-center">
-				© 2026 • Guia Visual Markdown • SISAPP
-				<div>© {2026} — Ferramenta de Visualização Markdown</div>
+		<footer class="w-full mt-20 bg-gradient-to-l from-slate-900 to-indigo-600 text-slate-400 mx-auto px-6 py-2 text-sm text-white">
+			<div class="flex items-center justify-between mx-auto px-2 py-2 text-center">
+				<div class="text-white">© 2026 • Guia Visual Markdown • <a href="https://siaucom.com.br" target="_blank">Siaucom</a></div>
 				<div class="text-white">Construído para documentação e revisão rápida</div>
 			</div>
 		</footer>

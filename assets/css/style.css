@@ -12,7 +12,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 99vh;
 }
 h1, h2, h3, h4, h5, h6, p {
     font-size: 1em;
@@ -30,22 +30,25 @@ img {
     border: none;
 }
 .mt-10 {
-	margin-top: 10vh !important;
+	margin-top: 2.5rem !important;
 }
 .mt-20 {
-	margin-top: 20vh !important;
+	margin-top: 5rem !important;
+}
+.mt-25 {
+	margin-top: 6.25rem !important;
 }
 .mt-30 {
-	margin-top: 30vh !important;
+	margin-top: 7.5rem !important;
 }
 .mt-40 {
-	margin-top: 40vh !important;
+	margin-top: 10rem !important;
 }
 .mt-50 {
-	margin-top: 50vh !important;
+	margin-top: 12.5rem !important;
 }
 .mt-60 {
-	margin-top: 60vh !important;
+	margin-top: 15rem !important;
 }
 
 header {

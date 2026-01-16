@@ -34,7 +34,7 @@ python -m http.server 8000
 Atualizações
 -----------
 - **Criado por:** tanabe / markdown-live-preview <a href="https://github.com/tanabe/markdown-live-preview" target="_blank">Github</a>
-- **Data da criação:** 16 de janeiro de 2026
+- **Data da criação:** Março de 2025
 - **Atualizado por:** Marcelo Saliba
 - **Data da atualização:** 16 de janeiro de 2026
 

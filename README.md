@@ -5,8 +5,8 @@ Descrição
 
 Este repositório contém um site estático para documentação e páginas de ajuda em HTML. Ele inclui páginas principais (como `index.html`, `ajuda.html`, `sobre.html`) e os recursos estáticos necessários em `assets/` (CSS, fontes, imagens e JavaScript).
 - Um sistema simples e eficiente para voce ler e editar os seus arquivos .md e .yml, faça um teste e comprove a simplicidade e eficiencia do sistema.
-<a href="https://github.com/saliba-siaucom/md_doc" target="_blank">https://github.com/saliba-siaucom/md_doc</a>
-<a href="https://tools.sisapp.com.br/md_doc/sobre.html" target="_blank">Leitor Markdown</a>
+ - <a href="https://github.com/saliba-siaucom/md_doc" target="_blank">https://github.com/saliba-siaucom/md_doc</a>
+ - <a href="https://tools.sisapp.com.br/md_doc/sobre.html" target="_blank">Leitor Markdown</a>
 
 
 Origem

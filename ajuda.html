@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Guia Visual de Markdown (.md)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<meta name="description" content="Leitor online de Markdown (.md) com pré-visualização em tempo real." />
+		<link rel="icon" type="image/png" href="./assets/image/favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<style>
+			pre {
+				background-color: #020617;
+				color: #38bdf8;
+			}
+			code {
+				color: #38bdf8;
+			}
+		</style>
+	</head>
+
+	<body class="bg-slate-50 text-slate-800">
+
+		<!-- Header -->
+		<header class="bg-gradient-to-r from-slate-900 to-indigo-600 text-white">
+			<div class="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between flex-col md:flex-row gap-4">
+				<div class="flex items-center gap-4">
+					<div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-3xl">📘</div>
+					<div>
+						<h1 class="text-3xl font-bold">Guia Visual de Markdown</h1>
+						<p class="text-sm opacity-90">Aprenda a escrever em Markdown com exemplos visuais</p>
+					</div>
+				</div>
+				<nav>
+					<a href="index.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
+					<a href="sobre.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Sobre</a>
+					<a href="ajuda.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Ajuda</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Conteúdo -->
+		<main class="max-w-7xl mx-auto px-6 py-10 space-y-16">
+
+			<selection>
+				<h2 class="text-3xl font-bold mb-4">📚 Guia Rápido de Markdown</h2>
+				<p class="text-gray-600 mb-8">Este guia apresenta os principais recursos do Markdown com exemplos de como escrever e como eles aparecem na pré-visualização.</p>
+			</selection>
+
+			<!-- Atalhos -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">🔖 Atalhos</h2>
+				<div class="grid md:grid-cols-1 gap-6">
+					<!-- Código -->
+					<div>
+						<h3 class="font-medium mb-2">Teclas de atalho</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+		F1 para abrir e Esc para fechar menu de ajuda.
+		Ctrl F para buscar no documento.
+		Ctrl H para substituir texto.
+						</code></pre>
+					</div>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-6">🛠 Configurações</h2>
+					<div class="grid md:grid-cols-2 gap-6">
+						<!-- Código -->
+						<div>
+							<h3 class="font-medium mb-2">Como acessar</h3>
+							<pre class="rounded-lg p-4 text-sm"><code>
+			Use os botões no canto superior direito da tela para:
+			- Resetar o editor
+			- Copiar o conteúdo renderizado
+			- Ativar/desativar sincronização de rolagem
+			- Alternar entre modo claro e escuro
+							</code></pre>
+						</div>
+
+						<!-- Resultado -->
+						<div>
+							<h3 class="font-medium mb-2">Onde encontrar</h3>
+							<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow">
+								<p>Os botões de configuração estão localizados no canto superior direito da interface do editor.</p>
+								<ul class="list-disc ml-5 mt-2">
+									<li><strong>Resetar:</strong> Limpa o conteúdo do editor.</li>
+									<li><strong>Copiar:</strong> Copia o HTML renderizado para a área de transferência.</li>
+									<li><strong>Sincronizar rolagem:</strong> Sincroniza a rolagem entre o editor e a pré-visualização.</li>
+									<li><strong>Modo escuro:</strong> Alterna entre temas claro e escuro para melhor visualização.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				</div>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">📝 Exemplos de Markdown</h2>
+				<div class="grid md:grid-cols-2 gap-6">
+					<!-- Código -->
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+			# Título nível 1
+			## Título nível 2
+			### Título nível 3
+			**Negrito**
+			*Itálico*
+			***Negrito e Itálico***
+			~~Riscado~~
+			- Item 1
+			- Item 2
+			- Subitem
+			1. Primeiro
+			2. Segundo
+			[Visitar site](http://srvweb.pmi.mg.gov.br:82/)
+				```php
+				echo "Olá Markdown";
+				```
+			Exemplo de citação
+						</code></pre>
+					</div>
+
+					<!-- Resultado -->
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow space-y-4">
+							<h1 class="text-3xl font-bold">Título nível 1</h1>
+							<h2 class="text-2xl font-semibold">Título nível 2</h2>
+							<h3 class="text-xl font-medium">Título nível 3</h3>
+							<strong>Negrito</strong><br>
+							<em>Itálico</em><br>
+							<strong><em>Negrito e Itálico</em></strong><br>
+							<del>Riscado</del>
+							<ul class="list-disc ml-5">
+								<li>Item 1</li>
+								<li>Item 2
+									<ul class="list-circle ml-5">
+										<li>Subitem</li>
+									</ul>
+								</li>
+							</ul>
+							<ol class="list-decimal ml-5">
+								<li>Primeiro</li>
+								<li>Segundo</li>
+							</ol>
+							<a href="#" class="text-blue-600 underline">
+								Visitar site
+							</a>
+							<div class="bg-slate-900 border border-l-4 border-slate-400 text-slate-100 rounded-lg p-4 shadow font-mono text-sm">
+								echo "Olá Markdown";
+							</div>
+							<div class="bg-white rounded-lg p-4 shadow border-l-4 border border-slate-800 italic">
+								Exemplo de citação
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cabeçalho -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">🏷 Cabeçalhos</h2>
+				<div class="grid md:grid-cols-2 gap-6">
+					<!-- Código -->
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+		# Título nível 1
+		## Título nível 2
+		### Título nível 3
+						</code></pre>
+					</div>
+
+					<!-- Resultado -->
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow">
+							<h1 class="text-3xl font-bold">Título nível 1</h1>
+							<h2 class="text-2xl font-semibold mt-2">Título nível 2</h2>
+							<h3 class="text-xl font-medium mt-2">Título nível 3</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Bloco -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">🧱 Títulos</h2>
+				<div class="grid md:grid-cols-2 gap-6">
+					<!-- Código -->
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+		# Título nível 1
+		## Título nível 2
+		### Título nível 3
+						</code></pre>
+					</div>
+
+					<!-- Resultado -->
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow">
+							<h1 class="text-3xl font-bold">Título nível 1</h1>
+							<h2 class="text-2xl font-semibold mt-2">Título nível 2</h2>
+							<h3 class="text-xl font-medium mt-2">Título nível 3</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Texto -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">✏️ Formatação de Texto</h2>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+		**Negrito**
+		*Itálico*
+		***Negrito e Itálico***
+		~~Riscado~~
+						</code></pre>
+					</div>
+
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow space-y-2">
+							<strong>Negrito</strong><br>
+							<em>Itálico</em><br>
+							<strong><em>Negrito e Itálico</em></strong><br>
+							<del>Riscado</del>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Listas -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">📋 Listas</h2>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+		- Item 1
+		- Item 2
+		- Subitem
+
+		1. Primeiro
+		2. Segundo
+						</code></pre>
+					</div>
+
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow">
+							<ul class="list-disc ml-5">
+								<li>Item 1</li>
+								<li>Item 2
+									<ul class="list-circle ml-5">
+										<li>Subitem</li>
+									</ul>
+								</li>
+							</ul>
+							<ol class="list-decimal ml-5 mt-4">
+								<li>Primeiro</li>
+								<li>Segundo</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Links -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">🔗 Links</h2>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+		[Visitar site](http://srvweb.pmi.mg.gov.br:82/)
+						</code></pre>
+					</div>
+
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white border border-l-4 border-slate-800 rounded-lg p-4 shadow">
+							<a href="#" class="text-blue-600 underline">
+								Visitar site
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Código -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">💻 Bloco de Código</h2>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+			```php
+			echo "Olá Markdown";
+						</code></pre>
+					</div>
+
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-slate-900 border border-l-4 border-slate-400 text-slate-100 rounded-lg p-4 shadow font-mono text-sm">
+							echo "Olá Markdown";
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Citação -->
+			<section>
+				<h2 class="text-2xl font-semibold mb-6">💬 Citação</h2>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="font-medium mb-2">Como escrever</h3>
+						<pre class="rounded-lg p-4 text-sm"><code>
+			Exemplo de citação
+			</code></pre>
+			</div>
+					<div>
+						<h3 class="font-medium mb-2">Como aparece</h3>
+						<div class="bg-white rounded-lg p-4 shadow border-l-4 border border-slate-800 italic">
+							Exemplo de citação
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Botão -->
+			<section class="bg-slate-100 text-slate-900 mt-16 border border-slate-300 rounded-xl p-6 shadow text-center">
+				<h2 class="text-2xl font-semibold mb-2">🚀 Teste no Editor</h2>
+				<p class="mb-4">
+					Use o editor Markdown para testar cada recurso em tempo real.
+				</p>
+				<a href="http://srvweb.pmi.mg.gov.br:82/md_doc/"
+				target="_blank"
+				class="inline-block bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-700 transition">
+					Abrir Editor Markdown
+				</a>
+			</section>
+		</main>
+		<!-- Footer --> 
+		<footer class="bg-gradient-to-l from-slate-900 to-indigo-600 text-slate-400 mt-16">
+			<div class="max-w-7xl mx-auto px-6 py-6 text-center">
+				© 2026 • Guia Visual Markdown • SISAPP
+			</div>
+		</footer>
+	</body>
+</html>

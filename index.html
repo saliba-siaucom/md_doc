@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-language" content="pt-br">
+		<meta http-equiv="content-script-type" content="text/javascript">
+		<meta http-equiv="content-style-type" content="text/css">
+		<meta name="description" content="Este é o editor Markdown online com pré-visualização em tempo real.">
+		<title>Pré-visualização ao vivo do Markdown</title>
+		
+		<link rel="icon" type="image/png" href="./assets/image/favicon.png">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=1.11.1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vscode-codicons@0.0.17/dist/codicon.min.css">
+		
+		<!-- Google tag (gtag.js) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-77C1GEG9C8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+	    <!-- Tailwind CSS CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>		
+		<!-- Configuração Local -->
+		<script type="module" src="./assets/js/index-97zVYoLy.js?v=1.11.1"></script>
+		<script>
+			(function(){
+				try {
+					var BOOT_THEME_KEY = 'com.markdownlivepreview_theme';
+					var raw = localStorage.getItem(BOOT_THEME_KEY);
+					var useDark = raw === 'dark';
+					document.documentElement.setAttribute('data-theme', useDark ? 'dark' : 'light');
+
+					var PREVIEW_CSS_LIGHT = './assets/css/github-markdown-light.css?v=1.11.1';
+					var PREVIEW_CSS_DARK  = './assets/css/github-markdown-dark_dimmed.css?v=1.11.1';
+					var href = useDark ? PREVIEW_CSS_DARK : PREVIEW_CSS_LIGHT;
+
+					var link = document.createElement('link');
+					link.id = 'gh-markdown-link';
+					link.rel = 'stylesheet';
+					link.type = 'text/css';
+					link.href = href;
+					document.head.appendChild(link);
+				} catch (e) {
+					// ignore — app will correct theme after load
+				}
+			})();
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-77C1GEG9C8');
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div id="menu-items" class=" flex items-center justify-between">
+				<div class="mr-10">
+					<a href="./" id="markdown-logo"><img src="./assets/image/Markdown-mark.svg"></a>
+					<p>Pré-visualização ao vivo do Markdown</p>
+					<p class="text-sm">F1 para abrir e Esc para fechar menu de ajuda.</p>
+				</div>
+			</div>
+
+			<div id="menu-buttons">
+				<div class="flex gap-2 justify-end items-center">
+					<a href="index.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
+					<a href="sobre.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Sobre</a>
+					<a href="ajuda.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Ajuda</a>
+				</div>
+				<div id="reset-button" role="button" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded"><a href="#" id="reset-link">Resetar</a></div>
+				<div id="copy-button" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded"><a href="#">Copiar</a></div>
+				<div id="sync-button" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">
+					<input type="checkbox" id="sync-scroll-checkbox"><label for="sync-scroll-checkbox">Sincronizar rolagem</label>
+					<span style="margin-left:12px;"><input type="checkbox" id="theme-checkbox"><label for="theme-checkbox">Modo escuro</label></span>
+				</div>
+			</div>
+
+			<div id="bloco-2">
+				<div id="markdown">
+					<a href="https://markdownlivepreview.com/" target="_blank">
+						<img src="./assets/image/Markdown-mark.svg">
+					</a>
+				</div>
+				<div id="github">	
+					<a href="https://github.com/tanabe/markdown-live-preview" target="_blank">
+						<img src="./assets/image/GitHub-Mark-Light-32px.webp">
+					</a>
+				</div>
+			</div>
+		</header>
+		<tbody>
+			<div id="container" class="split-container">
+				<div id="edit" class="column editor-pane">
+					<div id="editor-wrapper">
+						<div id="editor"></div>
+					</div>
+				</div>
+				<div id="split-divider" class="split-divider"></div>
+				<div id="preview" class="column preview-pane">
+					<div id="preview-wrapper">
+						<div id="output" class="content markdown-body"></div>
+					</div>
+				</div>
+			</div>
+		</tbody>
+		<footer></footer>
+		<script>
+		// // Test listener para verificar se o reset recebe cliques (alert + console)
+		// document.addEventListener('DOMContentLoaded', function () {
+		// 	try {
+		// 		var rb = document.getElementById('reset-button');
+		// 		console.log('[init] reset-button element:', rb);
+		// 		var rlink = document.getElementById('reset-link') || (rb && rb.querySelector('a'));
+		// 		if (rlink) {
+		// 			rlink.addEventListener('click', function (e) {
+		// 				e.preventDefault();
+		// 				// console.log('[reset-link] clicked', e);
+		// 				// alert('Reset acionado (teste): todo o conteúdo será restaurado.');
+		// 			});
+		// 		} else {
+		// 			console.log('[init] reset link not found');
+		// 		}
+		// 	} catch (err) {
+		// 		console.error('Erro ao configurar listener de reset:', err);
+		// 	}
+		// });
+		</script>
+	</body>
+</html>

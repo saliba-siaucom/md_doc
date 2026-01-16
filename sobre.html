@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Sobre — Leitor Markdown</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<meta name="description" content="Leitor online de Markdown (.md) com pré-visualização em tempo real." />
+
+		<link rel="icon" type="image/png" href="./assets/image/favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			// Configuração simples do Tailwind via CDN: adiciona um tom de azul personalizado
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							brand: {
+								50: '#f5fbff',
+								100: '#e6f2ff',
+								500: '#2563EB'
+							}
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body class="bg-gray-50 text-gray-800 antialiased">
+		<header class="bg-gradient-to-r from-slate-900 to-indigo-600 text-white">
+			<div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+				<div class="flex items-center gap-4">
+					<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-2xl">📄</div>
+					<div>
+						<h1 class="text-2xl font-semibold">Leitor Markdown</h1>
+						<p class="text-sm opacity-90">Visualize .md e .yml de forma rápida e confiável</p>
+					</div>
+				</div>
+				<nav>
+					<a href="index.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Início</a>
+					<a href="sobre.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Sobre</a>
+					<a href="ajuda.html" class="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded">Ajuda</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="max-w-6xl mx-auto px-6 py-12">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<section class="md:col-span-2 bg-white rounded-2xl shadow p-8">
+					<h2 class="text-3xl font-bold text-gray-900 mb-3">Sobre a ferramenta</h2>
+					<p class="text-gray-600 mb-4">Esta é uma ferramenta leve para visualizar arquivos <strong>Markdown (.md)</strong> com pré-visualização em tempo real. Ideal para revisar documentação, READMEs e notas técnicas antes de publicar.</p>
+
+					<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<div class="p-4 border rounded-lg">
+							<h3 class="font-semibold text-gray-800">Markdown (.md)</h3>
+							<p class="text-sm text-gray-600 mt-1">Formatação simples para títulos, listas, links, imagens e blocos de código.</p>
+						</div>
+						<div class="p-4 border rounded-lg">
+							<h3 class="font-semibold text-gray-800">YAML (.yml)</h3>
+							<p class="text-sm text-gray-600 mt-1">Formato de configuração baseado em indentação, comum em CI/CD e infra-as-code.</p>
+						</div>
+					</div>
+
+					<div class="mt-8">
+						<h3 class="text-xl font-semibold mb-2">Como usar</h3>
+						<ol class="list-decimal list-inside text-gray-600 space-y-2">
+							<li>Cole ou abra um arquivo <code class="bg-gray-100 px-1 rounded">.md</code> no editor.</li>
+							<li>Veja a pré-visualização renderizada ao lado (atualização em tempo real).</li>
+							<li>Copie o HTML gerado ou faça ajustes antes de publicar.</li>
+						</ol>
+					</div>
+				</section>
+
+				<aside class="bg-white rounded-2xl shadow p-6 flex flex-col gap-4">
+					<div>
+						<h3 class="text-lg font-semibold">Experimentar agora</h3>
+						<p class="text-sm text-gray-600 mt-1">Abra o leitor e teste a pré-visualização instantânea.</p>
+					</div>
+					<a href="./" class="inline-block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium">Abrir Leitor de Markdown</a>
+
+					<div class="pt-4 border-t mt-4">
+						<h4 class="text-sm font-medium">Dicas</h4>
+						<ul class="text-sm text-gray-600 mt-2 space-y-1">
+							<li>Use blocos de código para trechos com linguagem (```js).</li>
+							<li>Coloque metadados em YAML no topo para front-matter.</li>
+						</ul>
+					</div>
+					<aside class="pt-4 border-t mt-4">
+						<h4 class="text-sm font-medium">Links</h4>
+						<ul class="text-sm text-gray-600 mt-2 space-y-1">
+							<li><a href="https://github.com/seu-usuario/seu-repositorio" class="text-blue-600 underline">GitHub do Projeto</a></li>
+							<li><a href="ajuda.html" class="text-blue-600 underline">Guia de Uso</a></li>
+						</ul>
+					</aside>
+				</aside>
+			</div>
+		</main>
+
+		<div class="py-10 mt-10 border-t border-gray-200 "></div>
+		<footer class="w-full bg-gradient-to-l from-slate-900 to-indigo-600 text-slate-400 mx-auto px-6 py-2 text-sm text-white">
+			<div class="mx-auto px-6 py-6 text-center">
+				© 2026 • Guia Visual Markdown • SISAPP
+				<div>© {2026} — Ferramenta de Visualização Markdown</div>
+				<div class="text-white">Construído para documentação e revisão rápida</div>
+			</div>
+		</footer>
+	</body>
+</html>
